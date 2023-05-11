@@ -1,0 +1,6 @@
+.my-btn{
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 6px 16px; top: 30rpx; position: relative; color: white; left: 0rpx; border-radius: 10px; background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135; line-height:30rpx ; width: 323rpx; height: 71rpx; display: block; box-sizing: border-box
+}
+.my-btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 6px 16px; top: 30rpx; position: relative; color: white; left: 0rpx; border-radius: 10px; background-image: linear-gradient(to right, #6bd1b9, #73dbb6, #7fe4b2, #8fedac, #a1f5a5, #a6f89d, #adfb95, #b4fe8c, #adfd81, #a5fd76, #9dfc6b, #95fb5f); text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135; line-height:30rpx ; width: 323rpx; height: 71rpx; display: block; box-sizing: border-box
+}
