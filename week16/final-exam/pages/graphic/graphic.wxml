@@ -1,0 +1,21 @@
+<button style="box-shadow: rgba(0, 0, 0, 0.6) 0px 6px 16px; top: 32rpx; position: relative; color: white; left: 0rpx; border-radius: 10px; background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135; width: 323rpx; height: 71rpx; display: block; box-sizing: border-box;line-height: 30rpx;" bindtap="choose_image">点击上传图片</button>
+
+
+<image style="position: relative; left: 95rpx; top: 60rpx; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 16px" src="../../images/panda.jpg" mode="aspectFit"></image>
+
+<button style="box-shadow: rgba(0, 0, 0, 0.6) 0px 6px 16px; top: 74rpx; position: relative; color: white; left: -2rpx; border-radius: 10px; background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135; line-height: 30rpx; width: 323rpx; height: 71rpx; display: block; box-sizing: border-box" bindtap="graphic_detect">开始分析</button>
+
+<view style="width: 593rpx; height: 500rpx; background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); position: relative; left: 80rpx; top: 106rpx; display: block; box-sizing: border-box;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 16px;text-align: center;font-size: 25px;font-weight: bold;color: rgb(255, 255, 255);text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;">
+<text>图像识别结果:</text>
+<text style="position: absolute; left: 23rpx; top: 79rpx">关键词：{{image1.result[0].keyword}}</text>
+<text style="position: absolute; left: 24rpx; top: 163rpx">类型：{{image1.result[0].root}}</text>
+<text style="position: absolute; left: 23rpx; top: 250rpx">相似度：{{image1.result[0].score}}</text>
+
+
+
+
+
+
+
+
+</view>
