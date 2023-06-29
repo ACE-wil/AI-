@@ -1,0 +1,17 @@
+<button class="my-btn" style="width: 363rpx; height: 71rpx; display: block; box-sizing: border-box; left: 0rpx; top: 30rpx">点击图片后上传图片</button>
+
+
+<image style="position: relative; left: 25rpx; top: 60rpx; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 16px; width: 323rpx; height: 346rpx; display: inline-block; box-sizing: border-box" src="{{image_url1}}" mode="aspectFit" bindtap="choose_image1"></image>
+
+<image style="position: relative; left: 74rpx; top: 60rpx; border-radius: 10px; box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 16px; width: 323rpx; height: 346rpx; display: inline-block; box-sizing: border-box" src="{{image_url2}}" mode="aspectFit" bindtap="choose_image2"></image>
+
+<button style="box-shadow: rgba(0, 0, 0, 0.6) 0px 6px 16px; top: 74rpx; position: relative; color: white; left: -2rpx; border-radius: 10px; background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;line-height: 30rpx; width: 323rpx; height: 71rpx; display: block; box-sizing: border-box" bindtap="face_compare">开始比对</button>
+
+
+<view style="width: 593rpx; height: 500rpx; background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1); position: relative; left: 80rpx; top: 106rpx; display: block; box-sizing: border-box;border-radius: 10px;box-shadow: rgba(0, 0, 0, 0.5) 0px 6px 16px;text-align: center;font-size: 25px;font-weight: bold;color: rgb(255, 255, 255);text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444, 0px 7px 0px #333, 0px 8px 7px #001135;">
+<text>人脸比对检测结果:</text>
+<text style="position: absolute; left: 23rpx; top: 79rpx">自信度：{{image.confidence}}</text>
+
+
+
+</view>

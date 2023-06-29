@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/detect/detect",
+    "pages/compare/compare",
+    "pages/graphic/graphic",
+    "pages/explore/explore"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#9a64df",
+    "list": [
+        {
+            "pagePath": "pages/detect/detect",
+            "text": "人脸识别",
+            "iconPath": "images/face_detect.png",
+            "selectedIconPath": "images/face_detectt.png"
+        },
+        {
+            "pagePath": "pages/compare/compare",
+            "text": "人脸比对",
+            "iconPath": "images/compare.png",
+            "selectedIconPath": "images/comparee.png"
+        },
+        {
+            "pagePath": "pages/graphic/graphic",
+            "text": "图像识别",
+            "iconPath": "images/graphic.png",
+            "selectedIconPath": "images/graphicc.png"
+        },
+        {
+            "pagePath": "pages/explore/explore",
+            "text": "地图搜索",
+            "iconPath": "images/graphic.png",
+            "selectedIconPath": "images/graphicc.png"
+        }
+    ]
+}
+}

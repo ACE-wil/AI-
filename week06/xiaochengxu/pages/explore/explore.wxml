@@ -1,0 +1,59 @@
+ <!--搜索模块-->
+ <view class="cu-bar search bg-white">
+    <view class="search-form round">
+      <text class="cuIcon-search"></text>
+      <input type="text" placeholder="广州南方学院" confirm-type="search"></input>
+    </view>
+    <view class="action">
+      <button class="cu-btn bg-green shadow-blur round" style="width: 113rpx; height: 64rpx; display: flex; box-sizing: border-box; left: 0rpx; top: 0rpx">搜索</button>
+    </view>
+  </view>
+
+ <!--标签-->
+ <view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="action">
+      <text class="cuIcon-title text-orange "></text> 分类
+    </view>
+  </view>
+  
+ <!--九宫格模块-->
+  <view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+    <view class="cu-item" wx:for="{{iconList}}" wx:key wx:if="{{index<gridCol*2}}" style="width: 172rpx; height: 148rpx; display: flex; box-sizing: border-box; left: 29rpx; top: 0rpx; position: relative">
+      <view class="cuIcon-{{item.icon}} text-{{item.color}}" style="position: relative; left: 0rpx; top: -7rpx">
+        <view class="cu-tag badge" wx:if="{{item.badge!=0}}">
+          <block wx:if="{{item.badge!=1}}">{{item.badge>99?"99+":item.badge}}</block>
+        </view>
+      </view>
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+<!--详细模块-->
+  <view class="cu-card case {{isCard?'no-card':''}}">
+  <view class="cu-item shadow" wx:for="{{pois}}">
+    <view class="image">
+      <image src="{{item.photos[1].url}}" mode="widthFix"></image>
+      <view class="cu-tag bg-blue">{{item.type}}</view>
+      <view class="cu-bar bg-shadeBottom">
+        <text class="text-cut">{{item.address}}</text>
+      </view>
+    </view>
+    <view class="cu-list menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url({{item.photos[0].url}});"></view>
+        <view class="content flex-sub">
+          <view class="text-grey">{{item.name}}</view>
+          <view class="text-gray text-sm flex justify-between">
+            评分：{{item.biz_ext.rating}}
+            <view class="text-gray text-sm">
+              <text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+              <text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+              <text class="cuIcon-messagefill margin-lr-xs"></text> 30
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
+ 
